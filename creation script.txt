@@ -1,0 +1,58 @@
+
+CREATE DATABASE sip;
+
+CREATE TABLE `sip`.`staff` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `firstname` VARCHAR(255) NOT NULL,
+  `lastname` VARCHAR(255) NOT NULL,
+  `phone_number` VARCHAR(255) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `username` VARCHAR(255) NULL,
+  `password` VARCHAR(255) NULL,
+  PRIMARY KEY (`id`));
+
+
+
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('david', 'bennett', '0422987642', 'karthnal@gmail.com', 'davidb', 'david123');
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('wazid', 'pathan', '1234567678', 'wazid@gmail.com', 'wazida', 'wazid123');
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('elina', 'woolley', '555555555', 'elina@gmail.com', 'elinaw', 'elinaw123');
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('zach', 'jiang', '8888888888', 'zach@gmail.com', 'zachj', 'zach123');
+
+CREATE TABLE `sip`.`survey` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `created_by` VARCHAR(255) NOT NULL,
+  `created_date` VARCHAR(255) NOT NULL,
+  `survey_description` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `sip`.`questions` (
+  `question_id` INT NOT NULL AUTO_INCREMENT,
+   `survey_id` INT,
+  constraint fk_survey
+  foreign key (`survey_id`) references survey(`id`) on update cascade on delete cascade,
+  `question_text` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`question_id`));
+
+CREATE TABLE `sip`.`response_options` (
+  `question_id` INT NOT NULL AUTO_INCREMENT,
+  `option_id` INT,
+  constraint fk_questions
+  foreign key (`option_id`) references questions(`question_id`) on update cascade on delete cascade,
+  `option_text` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`question_id`));
+
+
+create table sip.participant (
+`participant_id` int not null auto_increment,
+`firstname` VARCHAR(255) NOT NULL,
+`lastname` VARCHAR(255) NOT NULL,
+`age` INT,
+`email` VARCHAR(255) NOT NULL,
+ primary key(`participant_id`)
+);
+
+
+
+
+
