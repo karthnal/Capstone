@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include("auth.php");  
+include("auth.php"); 
+	if(isset($_SESSION['uname'])){
+    header('Location: welcome.php');
+}
 
 ?>
 
