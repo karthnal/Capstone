@@ -1,3 +1,18 @@
+<?php
+
+
+// Check user login or not
+if(!isset($_SESSION['uname'])){
+    header('Location: index.php');
+}
+
+// logout
+if(isset($_POST['but_logout'])){
+    session_destroy();
+  header('Location: index.php');
+}
+?>
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -67,36 +82,20 @@
         <h1>Clim8<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
-        <ul>
+        
+      
 	<!-- Login Modal start  -->
 	<div class="text-center">
 	<!-- Button HTML (to Trigger Modal) -->
-	<a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a>
+	<!-- <a href="#myModal" class="trigger-btn" data-toggle="modal">Logout</a> -->
+  <a href="../CAPSTONE/index.php" >Logout</a>
+ 
+
+
 </div>	
 	
 		
 			
-			
-       <!--   <li><a href="../CAPSTONE/index.php">Home</a></li>
-			<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-         
-        </ul> -->
       </nav><!-- .navbar -->
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -105,13 +104,13 @@
     </div>
   </header><!-- End Header -->
   <!-- End Header -->
-<!-- ======= Hero Section ======= -->
+<!-- ======= Hero Section ======= 
   <section id="hero" class="hero">
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>Welcome to <span>Clim8</span></h2>
-          <p>Here at Clim8 we aim to design a survey system that measures the general public's perception of the climate change issues, and analyse those responses so that we have a definitive data to make a shift towards creating realistic impactful solutions.</p>
+          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
           </div>
         </div>
