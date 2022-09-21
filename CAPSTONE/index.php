@@ -44,7 +44,7 @@ include("auth.php");
 						<input type="password" class="form-control" name="txt_pwd" placeholder="Password" required="required">	
 					</div>        
 					<div class="form-group">
-						<button type="submit" value="Submit" name="but_submit" id="but_submit" class="btn btn-primary btn-lg btn-block login-btn">Staff Login</button>
+						<button type="submit" value="Submit" name="but_submit" id="but_submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
 					</div>
 				</form>
 			</div>
