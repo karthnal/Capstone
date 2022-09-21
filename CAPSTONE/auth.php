@@ -1,7 +1,7 @@
 <?php
 include "config.php";
 
-if(isset($_POST['but_submit'])){
+if(isset($_POST['but_login'])){
 
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
@@ -22,5 +22,10 @@ if(isset($_POST['but_submit'])){
         }
 
     }
+
+}
+if(isset($_POST['but_reg'])){
+
+header('Location: questionnaire.php');
 
 }
