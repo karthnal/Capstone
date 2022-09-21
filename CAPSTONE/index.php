@@ -50,7 +50,7 @@ include("auth.php");
 						<input type="password" class="form-control" name="txt_pwd" placeholder="Password" required="required">	
 					</div>        
 					<div class="form-group">
-						<button type="submit" value="Submit" name="but_submit" id="but_submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+						<button type="submit" value="Submit" name="but_login" id="but_login" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
 					</div>
 				</form>
 			</div>
@@ -91,7 +91,9 @@ include("auth.php");
             <input type="text" class="form-control" id="email" name="email"  required="required">  
           </div>       
           <div class="form-group">
-            <button type="submit" href="Questionnaire.php" class="btn btn-primary btn-lg btn-block login-btn">Continue</button>
+			  
+            <button type="submit" name="but_reg" id="but_reg" class="btn btn-primary btn-lg btn-block login-btn">Continue</button> 
+			  
           </div>
         </form>
       </div>
