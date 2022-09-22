@@ -9,12 +9,13 @@
 include ("header.php")
 ?>
 
+
 </head>
 
 
     <body>
-        <h1>Questionnaire Survey</h1>
+        <h1>Survey Questionnaire</h1>
+
         
 </html>
-
 

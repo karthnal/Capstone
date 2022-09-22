@@ -15,6 +15,7 @@ include("auth.php");
 ?>
 
 
+
 <body>
 
 <?php 
@@ -69,11 +70,12 @@ include("auth.php");
   <div class="modal-dialog modal-login">
     <div class="modal-content">
       <div class="modal-header">  
-        <h4 class="modal-title">Register User</h4> 
+        <h4 class="modal-title">Participant Details</h4> 
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
       </div>
       <div class="modal-body">
         <form method="post">
+
           <div class="form-group">
              <label> First Name: </label>
             <input type="text" class="form-control" id="fname" name="fname"  required="required">    
@@ -83,7 +85,7 @@ include("auth.php");
             <input type="text" class="form-control" id="lname" name="lname"  required="required">    
           </div>
           <div class="form-group">
-            <label> DOB: </label>
+            <label> Age: </label>
             <input type="text" class="form-control" id="dob" name="dob"  required="required">  
           </div>  
           <div class="form-group">
@@ -92,14 +94,17 @@ include("auth.php");
           </div>       
           <div class="form-group">
 			  
-            <button type="submit" name="but_reg" id="but_reg" class="btn btn-primary btn-lg btn-block login-btn">Continue</button> 
+            <button type="submit" value="Submit" name="but_reg" id="but_reg" class="btn btn-primary btn-lg btn-block login-btn">Continue</button> 
 			  
           </div>
         </form>
       </div>
     </div>
   </div>
-</div>     
+</div> 
+
+
+
     
 <!-- login  Modal HTML -->
 

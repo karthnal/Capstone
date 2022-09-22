@@ -24,8 +24,6 @@ if(isset($_POST['but_login'])){
     }
 
 }
-if(isset($_POST['but_reg'])){
 
-header('Location: questionnaire.php');
-
-}
+include "participant.php";
+?>
