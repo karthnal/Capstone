@@ -1,14 +1,13 @@
-
 CREATE DATABASE sip;
 
 CREATE TABLE `sip`.`staff` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `firstname` VARCHAR(255) NOT NULL,
-  `lastname` VARCHAR(255) NOT NULL,
-  `phone_number` VARCHAR(255) NOT NULL,
-  `email` VARCHAR(255) NOT NULL,
-  `username` VARCHAR(255) NULL,
-  `password` VARCHAR(255) NULL,
+  `firstname` NVARCHAR(255) NOT NULL,
+  `lastname` NVARCHAR(255) NOT NULL,
+  `phone_number` NVARCHAR(255) NOT NULL,
+  `email` NVARCHAR(255) NOT NULL,
+  `username` NVARCHAR(255) NULL,
+  `password` NVARCHAR(255) NULL,
   PRIMARY KEY (`id`));
 
 
@@ -20,10 +19,14 @@ INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `us
 
 CREATE TABLE `sip`.`survey` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `created_by` VARCHAR(255) NOT NULL,
-  `created_date` VARCHAR(255) NOT NULL,
-  `survey_description` VARCHAR(255) NOT NULL,
+  `created_by` NVARCHAR(255) NOT NULL,
+  `created_date` NVARCHAR(255) NOT NULL,
+  `survey_description` NVARCHAR(255) NOT NULL,
   PRIMARY KEY (`id`));
+
+INSERT INTO `sip`.`survey` (`created_by`,`created_date`,`survey_description`) VALUES('David Bennett', '10-09-2022','Survey on Climate change');
+INSERT INTO `sip`.`survey` (`created_by`,`created_date`,`survey_description`) VALUES('David Bennett', '15-09-2022','Survey on Green Energy');
+INSERT INTO `sip`.`survey` (`created_by`,`created_date`,`survey_description`) VALUES('Wazid', '20-09-2022','Survey on Global Warming');
 
 
 CREATE TABLE `sip`.`questions` (
@@ -31,28 +34,76 @@ CREATE TABLE `sip`.`questions` (
    `survey_id` INT,
   constraint fk_survey
   foreign key (`survey_id`) references survey(`id`) on update cascade on delete cascade,
-  `question_text` VARCHAR(255) NOT NULL,
+  `question_text` NVARCHAR(255) NOT NULL,
   PRIMARY KEY (`question_id`));
+
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Is the issue of climate change important to you personally?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think climate change is threatening your personal health and safety? ');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think temperature on earth has been rising over the past decade?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do the environmental policies in your country address the climate change crisis?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think each one of us can reduce the effects of climate change? ');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Climate change is a natural phenomenon, we as humans can’t do much about it to control?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Using fossil fuels that produce carbon on combustion are the main contributors for climate change?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Recent global disasters are triggered by climate change?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'There are more important matters to address than climate change?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Government should do more to educate the public about the effects of climate change?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Climate change is an exaggerated topic by media it’s not that big of a deal?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think deforestation is good for infrastructure development?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think climate change is only due to pollution caused by industries?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think health issues in the world today are due to climate change?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Do you think your knowledge about climate change is broad?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Climate change is inevitable because of the way modern society works? ');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Is it too late to fix the climate change crisis, should the governments and public be required to act much earlier?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Climate change is something that frightens you?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Developed nations should do more compared to developing countries to fix the climate change crisis?');
+INSERT INTO `sip`.`questions` (`survey_id`,`question_text`) VALUES(1,'Human activities have no significant impact over climate change?');
+
+
 
 CREATE TABLE `sip`.`response_options` (
-  `question_id` INT NOT NULL AUTO_INCREMENT,
-  `option_id` INT,
-  constraint fk_questions
-  foreign key (`option_id`) references questions(`question_id`) on update cascade on delete cascade,
-  `option_text` VARCHAR(255) NOT NULL,
-  PRIMARY KEY (`question_id`));
+  `option_id` INT NOT NULL AUTO_INCREMENT,
+  `option_text` NVARCHAR(255) NOT NULL,
+  PRIMARY KEY (`option_id`));
 
+INSERT INTO `sip`.`response_options` (`option_text`) VALUES('Agree');
+INSERT INTO `sip`.`response_options` (`option_text`) VALUES('Disagree');
+INSERT INTO `sip`.`response_options` (`option_text`) VALUES('Strongly Agree');
+INSERT INTO `sip`.`response_options` (`option_text`) VALUES('Strongly Disagree');
+INSERT INTO `sip`.`response_options` (`option_text`) VALUES('Dont Know at all');
 
 create table sip.participant (
 `participant_id` int not null auto_increment,
-`firstname` VARCHAR(255) NOT NULL,
-`lastname` VARCHAR(255) NOT NULL,
+`firstname` NVARCHAR(255) NOT NULL,
+`lastname` NVARCHAR(255) NOT NULL,
 `age` INT,
-`email` VARCHAR(255) NOT NULL,
+`email` NVARCHAR(255) NOT NULL,
  primary key(`participant_id`)
 );
 
+INSERT INTO `sip`.`participant` (`firstname`,`lastname`,`age`,`email`) VALUES('James', 'Smith', 30,'james.smith@outlook.com');
+INSERT INTO `sip`.`participant` (`firstname`,`lastname`,`age`,`email`) VALUES('Maria', 'Gracia', 15,'maria.gracia@hotmail.com');
+INSERT INTO `sip`.`participant` (`firstname`,`lastname`,`age`,`email`) VALUES('Rob', 'Johnson', 60,'rob.johnson@gmail.com');
 
 
+create table sip.responses (
+`participant_id` INT NOT NULL,
+`survey_id` INT NOT NULL,
+`question_id` INT NOT NULL,
+`option_id` INT NOT NULL,
+  foreign key (`option_id`) references response_options(`option_id`) on update cascade on delete cascade,
+ primary key(`survey_id`, `question_id`, `participant_id`));
 
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 1, 1,5);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 2, 1,4);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 3, 1,1);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 4, 1,1);
 
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 1, 2,1);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 2, 2,1);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 3, 2,1);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 4, 2,1);
+
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 1, 3,1);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 2, 3,2);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 3, 3,4);
+INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 4, 3,4);
