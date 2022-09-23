@@ -35,6 +35,8 @@ include ("header2.php")
     </body>
 	
 	<li><a href="../CAPSTONE/dashboard.php">dashboard</a></li>
+     <li><a href="../CAPSTONE/list-participants.php">List Participants</a></li>
+      <li><a href="../CAPSTONE/list-surveys.php">Survey Management</a></li>
 </html>
 
 
