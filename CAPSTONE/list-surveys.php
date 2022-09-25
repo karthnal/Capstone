@@ -1,6 +1,13 @@
-<?php
-include ("header3.php")
-?>
+<html>
+    <head>
+        <title>Survey Management</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
+     <h2 style="background-color:aquamarine;">Survey Management<span>.</span></h2>
+   </body>
+   </html>
 <?php
 
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
@@ -11,35 +18,73 @@ if (!$con) {
 }
      
         
-     //$select_query = "SELECT count(*) as countpr FROM  participant";
-     $select_query = "SELECT * FROM  survey";
-    $result = mysqli_query($con,$select_query);
+     
+        $select_query = "SELECT * FROM  survey";
+        $result = mysqli_query($con,$select_query);
         $row = mysqli_fetch_array($result);
-     //$count = $row['countpr'];
-     //echo "<p>count is $count</p>"; 
+        $numResults = $result->num_rows;
+        ?>
+    
+                                   <table border="1">
+                                    <thead>
+                                                <tr>
+                                                    <th>Survey Id</th>
+                                                    <th>Created By</th>
+                                                    <th>Created Date</th>
+                                                    <th>Survey Description</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            
+                        <?php
+                         //for ($i = 0; $i < $numResults; $i++) {
+                         if ($result = $con->query($select_query)) {
+                                while ($row = $result->fetch_assoc()) {
+                                    $id = $row['id'];
+                                    $created_by = $row['created_by'];
+                                    $created_date = $row['created_date'];
+                                    $survey_description = $row['survey_description'];
+                
+                        
+                            echo "<tr>";
+                            echo "<td valign=\"top\">$id</td>";
+                            echo "<td valign=\"top\">$created_by</td>";
+                            echo "<td valign=\"top\">$created_date</td>";
+                            echo "<td valign=\"top\">$survey_description</td>";
+                           
+                            //echo "<p>created by: $created_by</p>";
+                           // echo "<p>survey_description: $survey_description</p>";
+                            createButtonColumn("id", $id,"created_by",trim($created_by), "created_date",$created_date,                "survey_description",trim($survey_description), "Edit", "edit-survey.php");
+                            createButtonColumn("id", $id,"created_by",$created_by, "created_date",$created_date,                "survey_description",$survey_description,"Delete", "delete-survey.php");
+                            
+                            echo "</tr>";                   
+                        }
+                    }
 
-        echo '<table border="1" cellspacing="2" cellpadding="2"> 
-      <tr> 
-          <td> <font face="Arial">Survey Id</font> </td> 
-          <td> <font face="Arial">Created By</font> </td> 
-          <td> <font face="Arial">Created Date</font> </td> 
-          <td> <font face="Arial">survey Description</font> </td> 
-      </tr>';
+                        $result->free();
+                        $con->close();
 
-      if ($result = $con->query($select_query)) {
-    while ($row = $result->fetch_assoc()) {
-        $field0name = $row["id"];
-        $field1name = $row["created_by"];
-        $field2name = $row["created_date"];
-        $field3name = $row["survey_description"];
-         
-   echo '<tr>   
-                  <td>'.$field0name.'</td>
-                  <td>'.$field1name.'</td> 
-                  <td>'.$field2name.'</td> 
-                  <td>'.$field3name.'</td>  
-              </tr>';
-    }
-    $result->free();
-} 
+                        echo "</table>";
+            
+                        function createButtonColumn($hiddenid1, $hiddenValue1, $hiddenid2, $hiddenValue2, $hiddenid3, $hiddenValue3, $hiddenid4, $hiddenValue4, $buttonText, $actionPage) {
+                            echo "<td>";
+                            echo "<form action=$actionPage method=\"GET\">";
+                            echo "<input type=\"hidden\" name=$hiddenid1 value=$hiddenValue1>"; 
+                            echo "<input type=\"hidden\" name=$hiddenid2 value=$hiddenValue2>";   
+                            echo "<input type=\"hidden\" name=$hiddenid3 value=$hiddenValue3>";
+                            echo "<input type=\"hidden\" name=$hiddenid4 value=$hiddenValue4>";            
+                            echo "<button type=\"submit\">$buttonText</button>";
+                            echo "</form>";         
+                            echo "</td>";
+                            //echo "<p>hiddenValue2: $hiddenValue2</p>";
+                        }
 
+                         echo "<a href=\"index.php\">Back to Home Page|   </a>";
+                         echo "<a href=add-new-survey.php>Add New Survey</a>"; 
+                         echo "<br><hr>";                       
+                    
+                     ?>
+                 </table>
+                
+                        

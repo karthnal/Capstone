@@ -1,6 +1,14 @@
-<?php
-include ("header3.php")
-?>
+<html>
+    <head>
+        <title>List Participants</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
+     <h2 style="background-color:aquamarine;">List Participants<span>.</span></h2>
+   </body>
+   </html>
+
 <?php 
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
 $con = mysqli_connect("localhost:4306", $user, $password, "sip");
@@ -23,6 +31,7 @@ if (!$con) {
           <td> <font face="Arial">Age   </font> </td> 
           <td> <font face="Arial">Email</font> </td> 
       </tr>';
+      
 
       if ($result = $con->query($select_query)) {
     while ($row = $result->fetch_assoc()) {
@@ -35,9 +44,16 @@ if (!$con) {
                   <td>'.$field2name.'</td> 
                   <td>'.$field3name.'</td> 
                   <td>'.$field4name.'</td> 
+
                   
               </tr>';
     }
+    echo "</table>";
+    echo "<br>";
+    echo "<hr/>";
+    echo "<a href=index.php>Back to Home Page</a>";
     $result->free();
+
 } 
 
+ 
