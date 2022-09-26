@@ -1,11 +1,11 @@
 <html>
     <head>
-        <title>Add question</title>
+        <title>Add Question</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
      <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Add question<span>.</span></h2>
+     <h2 style="background-color:aquamarine;">Add Question<span>.</span></h2>
    </body>
    </html>
  
@@ -60,8 +60,10 @@ else
           echo <<<END
                     <form action="" method="POST">
 
-                      <label>Enter Survey Id :</label>
+                      <label>Enter Survey Id  :</label>
                       <input type="number" name="survey_id" value="" required="required">
+                      <br>
+                      <br>
                       <label>Add new question :</label>
                       <input type="text" name="question_text" value="" required="required">
                        
