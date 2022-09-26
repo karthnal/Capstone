@@ -1,14 +1,6 @@
-<html>
-    <head>
-        <title>Survey Management</title>
-        <meta charset="UTF-8"/>
-    </head>
-    <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Survey Management<span>.</span></h2>
-   </body>
-   </html>
+
 <?php
+include("header4.php");
 
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
 $con = mysqli_connect("localhost:4306", $user, $password, "sip");
@@ -25,8 +17,8 @@ if (!$con) {
         $numResults = $result->num_rows;
         ?>
     
-                                   <table border="1">
-                                    <thead>
+                                   <table class="table align-middle mb-0 bg-white">
+                                    <thead class="bg-light">
                                                 <tr>
                                                     <th>Survey Id</th>
                                                     <th>Created By</th>
