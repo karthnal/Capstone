@@ -30,6 +30,6 @@ if(isset($_POST['but_login'])){
 
 }
 
-//include "participant.php";
+include "participant.php";
 
 ?>
