@@ -17,81 +17,36 @@ include ("header4.php")
         <div class=" container-md mt-5">
         <h1>Survey Questionnaire</h1>
         <div class="mw-100 row col-5">
+			
+
+
+
+
+		<br>
+		<!-- Question 1 -->
+
   <h4 class="fw-bold text-center mt-6"></h4>
   <form class="bg-white px-4" action="">
-    <p class="fw-bold">Q1. Populate questions from database</p>
-    <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" name="agree" id="radioAgree" />
-      <label class="form-check-label" for="radioAgree">
-        Agree
-      </label>
-    </div>
-    <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" name="stronglyAgree" id="radioStronglyAgree" />
-      <label class="form-check-label" for="radioStronglyAgree">
-        Strongly Agree
-      </label>
-    </div>
-    <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" name="disagree" id="radioDisagree" />
-      <label class="form-check-label" for="radioDisagree">
-        Disagree
-      </label>
-    </div>
-    <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" name="stronglyDisagree" id="radioStronglyDisagree" />
-      <label class="form-check-label" for="radioStronglyDisagree">
-        Strongly Disagree
-      </label>
-    </div>
-    <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" name="dontKnow" id="radioDontKnow" />
-      <label class="form-check-label" for="radioDontKnow">
-        Don't know
-      </label>
-    </div>
-  </form>
-
-  <!-- submit button -->
-  <div class="text-end ">
-    <button href="../CAPSTONE/index.php"type="button" class="btn btn-primary" onclick="backButton()">Back</button>
-    <button type="button" class="btn btn-primary">Submit</button>
-    <script>
-        function backButton(){
-            location.href = "../CAPSTONE/index.php"
-        }
-    </script>
-  </div>
-</div>
-</div>
-
-
-
-
-<!-- Question 1 -->
-
-<div class="row col-5">
-  <h4 class="fw-bold text-center mt-3"></h4>
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q1" value="1" id="1" />
+    <p class="fw-bold" id="question1" name="question1">Choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q1" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q1" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -99,17 +54,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q1" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q1" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -122,25 +77,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q2" value="1" id="1" />
+    <p class="fw-bold" id="question2" name="question2">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q2" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q2" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -148,17 +103,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q2" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q2" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -171,25 +126,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q3" value="1" id="1" />
+    <p class="fw-bold" id="question3" name="question3">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q3" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q3" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -197,17 +152,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q3" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q3" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -219,25 +174,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q4" value="1" id="1" />
+    <p class="fw-bold" id="question4" name="question4">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q4" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q4" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -245,17 +200,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q4" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q4" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -267,25 +222,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q5" value="1" id="1" />
+    <p class="fw-bold" id="question5" name="question5">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q5" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q5" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -293,17 +248,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q5" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q5" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -315,25 +270,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q6" value="1" id="1" />
+    <p class="fw-bold" id="question6" name="question6">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q6" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q6" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -341,17 +296,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q6" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q6" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -363,25 +318,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q7" value="1" id="1" />
+    <p class="fw-bold" id="question7" name="question7">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q7" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q7" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -389,17 +344,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q7" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q7" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -411,25 +366,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q8" value="1" id="1" />
+    <p class="fw-bold" id="question8" name="question8">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q8" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q8" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -437,17 +392,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q8" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q8" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -459,25 +414,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q9" value="1" id="1" />
+    <p class="fw-bold" id="question9" name="question9">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q9" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q9"value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9"value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -485,17 +440,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q9" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q9" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -507,25 +462,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q10" value="1" id="1" />
+    <p class="fw-bold" id="question10" name="question10">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q10" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q10" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -533,17 +488,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q10" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q10" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -552,25 +507,25 @@ include ("header4.php")
 <br>	
 <!-- end of question -->
 <!-- Question 11 -->
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q11" value="1" id="1" />
+    <p class="fw-bold" id="question11" name="question11">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q11" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q11" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -578,17 +533,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q11" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q11" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -602,25 +557,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q12" value="1" id="1" />
+    <p class="fw-bold" id="question12" name="question12">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q12" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q12" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -628,17 +583,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q12" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q12" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -651,25 +606,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q13" value="1" id="1" />
+    <p class="fw-bold" id="question13" name="question13">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q13" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q13" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -677,17 +632,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q13" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q13" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -699,25 +654,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q14" value="1" id="1" />
+    <p class="fw-bold" id="question14" name="question14">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q14" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q14" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -725,17 +680,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q14" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q14" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -747,25 +702,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q15" value="1" id="1" />
+    <p class="fw-bold" id="question15" name="question15">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q15" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q15" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -773,17 +728,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q15" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q15" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -795,25 +750,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q16" value="1" id="1" />
+    <p class="fw-bold" id="question16" name="question16">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q16" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q16" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -821,17 +776,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q16" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q16" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -843,25 +798,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q17" value="1" id="1" />
+    <p class="fw-bold" id="question17" name="question17">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q17" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q17" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -869,17 +824,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q17" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q17" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -891,25 +846,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q18" value="1" id="1" />
+    <p class="fw-bold" id="question18" name="question18">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q18" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q18" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -917,17 +872,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q18" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q18" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -939,25 +894,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q19" value="1" id="1" />
+    <p class="fw-bold" id="question19" name="question19">choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q19" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q19"value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19"value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -965,17 +920,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q19" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q19" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -987,25 +942,25 @@ include ("header4.php")
 
 
   <form class="px-4" action="">
-    <p class="fw-bold">Choose one or more options</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q20" value="1" id="1" />
+    <p class="fw-bold" id="question20" name="question20"> choose one or more options</p>
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="1" id="1" />
       <label class="form-check-label" for="flexCheckDefault">
         Agree
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q20" value="2" id="2" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="2" id="2" />
       <label class="form-check-label" for="flexCheckDefault2">
         Disagree 
       </label>
     </div>
 
-    <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q20" value="3" id="3" />
+    <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="3" id="3" />
       <label class="form-check-label" for="flexCheckDefault3">
         Strongly Agree 
       </label>
@@ -1013,17 +968,17 @@ include ("header4.php")
 
 
 
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q20" value="4" id="4" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="4" id="4" />
       <label class="form-check-label" for="flexCheckDefault4">
         Strongly Disagree 
       </label>
     </div>
   
- <!-- Checked checkbox -->
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" data-limit="only-one-in-a-group" name="Q20" value="5" id="5" />
+ <!-- Checked radio -->
+    <div class="form-check form-check-inline mb-2">
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="5" id="5" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -1199,7 +1154,7 @@ include ("header4.php")
 
 <!-- Question Selection 1 per group -->
 <script>
-    let cbxes = document.querySelectorAll('input[type="checkbox"][data-limit="only-one-in-a-group"]');
+    let cbxes = document.querySelectorAll('input[type="radio"][data-limit="only-one-in-a-group"]');
     [...cbxes].forEach((cbx) => {
         cbx.addEventListener('change', (e) => {
             if (e.target.checked)
