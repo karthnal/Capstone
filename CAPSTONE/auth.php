@@ -5,6 +5,7 @@ if(isset($_POST['but_login'])){
 
     $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
+    
 
     if ($uname != "" && $password != ""){
 
@@ -23,8 +24,12 @@ if(isset($_POST['but_login'])){
 
     }
 
+    if ($hashpw = hash_hmac('sha512', 'salt' . $_REQUEST['password'], $_SERVER['site_key'])){
+        header('Location: welcome.php');
+    }
+
 }
 
-include "participant.php";
+//include "participant.php";
 
 ?>
