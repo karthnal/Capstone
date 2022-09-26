@@ -14,21 +14,13 @@ include("auth.php");
 
 ?>
 
-
-
 <body>
 
 <?php 
 	include("header.php");  
 	?>
 
-  
-
   <main id="main">
-
-	  
-
-
 
 <!-- login  Modal HTML -->	  
 
@@ -52,6 +44,7 @@ include("auth.php");
 					</div>        
 					<div class="form-group">
 						<button type="submit" value="Submit" name="but_login" id="but_login" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                        
 					</div>
 				</form>
 			</div>
@@ -102,15 +95,9 @@ include("auth.php");
     </div>
   </div>
 </div> 
-
- 
-
     
-<!-- login  Modal HTML -->
+<!-- login  Modal HTML --> 
 
-	 
-<!-- -->
-  
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio sections-bg">
       <div class="container" data-aos="fade-up">
@@ -129,7 +116,7 @@ include("auth.php");
               <li data-filter=".filter-product">Product</li>
               <li data-filter=".filter-branding">Branding</li>
               <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters 
+            </ul>  End Portfolio Filters 
           </div> -->
 
           <div class="row gy-4 portfolio-container">
