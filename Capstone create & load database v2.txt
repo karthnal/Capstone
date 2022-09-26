@@ -1,3 +1,4 @@
+DROP database if exists sip;
 CREATE DATABASE sip;
 
 CREATE TABLE `sip`.`staff` (
@@ -91,6 +92,9 @@ create table sip.responses (
 `question_id` INT NOT NULL,
 `option_id` INT NOT NULL,
   foreign key (`option_id`) references response_options(`option_id`) on update cascade on delete cascade,
+  foreign key (`participant_id`) references participant(`participant_id`) on update cascade on delete cascade,
+  foreign key (`survey_id`) references survey(`id`) on update cascade on delete cascade,
+  foreign key (`question_id`) references questions(`question_id`) on update cascade on delete cascade,
  primary key(`survey_id`, `question_id`, `participant_id`));
 
 INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 1, 1,5);
@@ -107,3 +111,8 @@ INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`optio
 INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 2, 3,2);
 INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 3, 3,4);
 INSERT INTO `sip`.`responses` (`survey_id`,`question_id`,`participant_id`,`option_id`) VALUES(1, 4, 3,4);
+
+
+
+
+
