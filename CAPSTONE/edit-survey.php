@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Edit Survey.</title>
+        <title>Edit Survey</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
