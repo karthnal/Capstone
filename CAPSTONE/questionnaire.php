@@ -19,9 +19,7 @@ $surveyid = $_GET["sid"];
         <div class=" container-md mt-5">
         <h1>Survey Questionnaire</h1>
         <div class="mw-100 row col-5">
-		<?= $participantid ?>
-			<br>
-			<?= $surveyid ?>
+
 
 
 
