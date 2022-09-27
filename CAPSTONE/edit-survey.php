@@ -1,18 +1,11 @@
 <html>
     <head>
-
-    <?php 
-
-    include("header4.php");
-
-    ?>
         <title>Edit Survey</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-     
-
-
+     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
+     <h2 style="background-color:aquamarine;">Edit Survey<span>.</span></h2>
    </body>
    </html>
  
@@ -95,8 +88,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
    }
       echo <<<END
         Editing survey with ID: <strong>$survey_id</strong><br><br>
-       
-        <form class="table align-middle mb-0 bg-white action="" method="POST">
+        <form action="" method="POST">
           <table>
             <tr>
               <td>Survey Id:</td>
@@ -119,7 +111,6 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
           <input type="submit" name="submit" value="Update">
           <input type="submit" name="submit" value="Cancel"> 
         </form>
-
 
 END;
 

@@ -4,12 +4,11 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-
+     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
+     <h2 style="background-color:aquamarine;">Question Management<span>.</span></h2>
    </body>
    </html>
 <?php
-
-include("header4.php");
 
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
 $con = mysqli_connect("localhost:4306", $user, $password, "sip");
@@ -25,8 +24,8 @@ if (!$con) {
         $row = mysqli_fetch_array($result);
         $numResults = $result->num_rows;
         ?>
-    <div class=" container-md mt-5">
-                                   <table class="table align-middle mb-0 bg-white">
+    
+                                   <table border="1">
                                     <thead>
                                                 <tr>
                                                     <th>Question Id</th>
@@ -82,6 +81,5 @@ if (!$con) {
                     
                      ?>
                  </table>
-             </div>
                 
                         
