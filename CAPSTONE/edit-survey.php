@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Edit Survey</title>
+        <title>Edit Survey.</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
@@ -96,11 +96,11 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
             </tr>
             <tr>
               <td>Created By:</td>
-              <td><input type="text" name="created_by" value="$created_by"></td>
+              <td><input type="text" name="created_by" readonly="readonly" value="$created_by"></td>
             </tr>
             <tr>
               <td>created  Date:</td>
-              <td><input type="text" name="created_date" value="$created_date"></td>
+              <td><input type="text" name="created_date" readonly="readonly" value="$created_date"></td>
             </tr>
             <tr>
               <td>Survey Description:</td>
