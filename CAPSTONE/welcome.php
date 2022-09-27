@@ -30,6 +30,7 @@ include ("header2.php")
         <form method='post' action="" >
             <input id="logout"  onclick="location.href = '.../CAPSTONE/index.php';"type="submit" value="Logout" name="but_logout" >
         </form>
+        
     </body>
 	
 	<li><a href="../CAPSTONE/dashboard.php">dashboard</a></li>

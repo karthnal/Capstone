@@ -16,6 +16,8 @@ if (!$con) {
         $row = mysqli_fetch_array($result);
         $numResults = $result->num_rows;
         ?>
+
+        <div class=" container-md mt-5">
     
                                    <table class="table align-middle mb-0 bg-white">
                                     <thead class="bg-light">
@@ -78,5 +80,6 @@ if (!$con) {
                     
                      ?>
                  </table>
+             </div>
                 
                         
