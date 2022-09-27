@@ -53,7 +53,7 @@ if (!$con) {
                              
                             
                             createButtonColumn("question_id", $question_id,"survey_id",$survey_id, "question_text",$question_text,"Delete", "delete-question.php");
-                            createButtonColumn("question_id", $question_id,"survey_id",$survey_id, "question_text",$question_text,"Edit", "edit-question.php");
+                            createButtonColumn("question_id", $question_id,"survey_id",$survey_id, "question_text",str_replace(' ','_',$question_text),"Edit", "edit-question.php");
                             
                             echo "</tr>";                   
                         }

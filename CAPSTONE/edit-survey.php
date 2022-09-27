@@ -26,14 +26,14 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
       }
 
       $survey_id = $_GET['id']; 
-      $created_by = trim($_GET['created_by']);
+      $created_by = str_replace('_',' ',$_GET['created_by']);
       $created_date = $_GET['created_date'];
-      $survey_description = trim($_GET['survey_description']);
+      $survey_description = str_replace('_',' ',$_GET['survey_description']);
       //** to check if we are correct key is fetched for edit   
       // echo "<p>surveyid is $survey_id</p>";  
 
-      echo "<p>created by: $created_by</p>";
-      echo "<p>survey_description by: $survey_description</p>";
+      //echo "<p>created by: $created_by</p>";
+      //echo "<p>survey_description by: $survey_description</p>";
      
 
       if (isset($_POST['submit'])) {
@@ -65,7 +65,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
        $post_created_by = $_POST['created_by'];
        $post_created_date = $_POST['created_date'];
        $post_survey_description = $_POST['survey_description'];
-       echo "<p>post_survey_description is: $post_survey_description</p>";
+       //echo "<p>post_survey_description is: $post_survey_description</p>";
 
 
         $query = "UPDATE survey 
@@ -76,7 +76,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
 
               $result = mysqli_query($con,$query);
-         echo "<p>result is $result</p>";
+         //echo "<p>result is $result</p>";
 
          if ($result == 1) {
           echo "Successfully updated survey record!!!<br>";

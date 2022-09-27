@@ -49,7 +49,7 @@ if (!$con) {
                            
                             //echo "<p>created by: $created_by</p>";
                            // echo "<p>survey_description: $survey_description</p>";
-                            createButtonColumn("id", $id,"created_by",trim($created_by), "created_date",$created_date,                "survey_description",trim($survey_description), "Edit", "edit-survey.php");
+                            createButtonColumn("id", $id,"created_by",str_replace(' ','_',$created_by), "created_date",$created_date,"survey_description",str_replace(' ','_',$survey_description), "Edit", "edit-survey.php");
                             createButtonColumn("id", $id,"created_by",$created_by, "created_date",$created_date,                "survey_description",$survey_description,"Delete", "delete-survey.php");
                             
                             echo "</tr>";                   

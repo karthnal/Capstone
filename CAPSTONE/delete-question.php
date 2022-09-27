@@ -54,9 +54,5 @@ if (!isset($_GET['survey_id']) || empty($_GET['survey_id'])) {
           echo "<a href=\"index.php\">Back to Home Page</a>";
           echo "<br><hr>";
           exit;   
-        
-         
-      
-  
         $con->close();
       }

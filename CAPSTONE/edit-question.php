@@ -33,12 +33,12 @@ if (!isset($_GET['survey_id']) || empty($_GET['survey_id'])) {
       }
 
 
-    $question_text = mysqli_real_escape_string($con,$_GET['question_text']);
-    echo "<p>question_text : $question_text</p>";
-    $survey_id = mysqli_real_escape_string($con,$_GET['survey_id']);
-    echo "<p>survey_id : $survey_id</p>";
-    $question_id = mysqli_real_escape_string($con,$_GET['question_id']);
-    echo "<p>question_id : $question_id</p>";
+    $question_text = str_replace('_',' ',$_GET['question_text']);
+    //echo "<p>question_text : $question_text</p>";
+    $survey_id = $_GET['survey_id'];
+    //echo "<p>survey_id : $survey_id</p>";
+    $question_id = $_GET['question_id'];
+    //echo "<p>question_id : $question_id</p>";
 
 
 if (isset($_POST['submit'])) {
@@ -103,7 +103,7 @@ if (isset($_POST['submit'])) {
                       <label>Edit question :</label>
                       <input type="text" name="question_text" value="$question_text" required="required">       
                       <br><hr>
-                    <input type="submit" name="submit" value="Edit">
+                    <input type="submit" name="submit" value="Update">
                     <input type="submit" name="submit" value="Cancel"> 
                   </form>
           END;
