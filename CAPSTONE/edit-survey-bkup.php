@@ -96,7 +96,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
       echo <<<END
         Editing survey with ID: <strong>$survey_id</strong><br><br>
        
-        <form class="table align-middle mb-0 bg-white action="" method="POST">
+        <form action="" method="POST">
           <table>
             <tr>
               <td>Survey Id:</td>

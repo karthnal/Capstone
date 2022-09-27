@@ -4,12 +4,12 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">List Participants<span>.</span></h2>
+     
    </body>
    </html>
 
 <?php 
+include("header4.php");
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
 $con = mysqli_connect("localhost:4306", $user, $password, "sip");
 // Check connection
@@ -24,13 +24,18 @@ if (!$con) {
      //$count = $row['countpr'];
      //echo "<p>count is $count</p>"; 
 
-        echo '<table border="1" cellspacing="2" cellpadding="2"> 
+
+                                   
+
+        echo '<div class=" container-md mt-5"> 
+        <table class="table align-middle mb-0 bg-white cellspacing="2" cellpadding="2"> 
       <tr> 
           <td> <font face="Arial">First Name  </font> </td> 
           <td> <font face="Arial">Last Name      </font> </td> 
           <td> <font face="Arial">Age   </font> </td> 
           <td> <font face="Arial">Email</font> </td> 
-      </tr>';
+      </tr>
+      </div>';
       
 
       if ($result = $con->query($select_query)) {
@@ -55,5 +60,6 @@ if (!$con) {
     $result->free();
 
 } 
+
 
  
