@@ -6,9 +6,7 @@
 <link rel="stylesheet" href="../CAPSTONE/assets/css/login modal.css">   
 <link rel="stylesheet" href="../CAPSTONE/assets/css/login.css">
 <?php 
-include ("header4.php");
-$participantid = $_GET["pid"];
-$surveyid = $_GET["sid"];
+include ("header4.php")
 ?>
 
 
@@ -19,9 +17,7 @@ $surveyid = $_GET["sid"];
         <div class=" container-md mt-5">
         <h1>Survey Questionnaire</h1>
         <div class="mw-100 row col-5">
-		<?= $participantid ?>
-			<br>
-			<?= $surveyid ?>
+			
 
 
 
@@ -994,8 +990,7 @@ $surveyid = $_GET["sid"];
  </form>
 	
   <div class="card-footer text-end">
-	   
-    <button type="button" value ="submit" name="but_submit" class="btn btn-primary" id="demo">Submit</button>
+    <button type="button" class="btn btn-primary" id="demo">Submit</button>
 	  <p id="output">Value</p>
 	  <script>
       
@@ -1005,26 +1000,26 @@ $surveyid = $_GET["sid"];
 
 		  
 		btn.addEventListener('click', () => {  
-		let question1 = 5;
-		let question2 = 5;
-		let question3 = 5;
-		let question4 = 5;
-		let question5 = 5;
-		let question6 = 5;
-		let question7 = 5;
-		let question8 = 5;
-		let question9 = 5;
-    	let question10 = 5;
-		let question11 = 5;
-		let question12 = 5;
-		let question13 = 5;
-		let question14 = 5;
-		let question15 = 5;
-		let question16 = 5;
-		let question17 = 5;
-		let question18 = 5;
-		let question19 = 5;
-		let question20 = 5;
+		let question1 = 7;
+		let question2 = 8;
+		let question3 = 9;
+		let question4 = 10;
+		let question5 = 11;
+		let question6 = 12;
+		let question7 = 13;
+		let question8 = 14;
+		let question9 = 15;
+    	let question10 = 16;
+		let question11 = 17;
+		let question12 = 18;
+		let question13 = 19;
+		let question14 = 20;
+		let question15 = 21;
+		let question16 = 22;
+		let question17 = 23;
+		let question18 = 24;
+		let question19 = 25;
+		let question20 = 26;
 		let check1 = document.getElementsByName('Q1');
 		let check2 = document.getElementsByName('Q2');		
 		let check3 = document.getElementsByName('Q3');		
@@ -1148,22 +1143,8 @@ $surveyid = $_GET["sid"];
 				 question20 = Q20.value
 			 }
             });
-			
-
-			
-		var myoutput =  [question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,question19,question20].join(",");
- 
-					
-			
-			
-			
-						var xhr = new XMLHttpRequest();
-            xhr.open("POST", "questionsubmit.php?pid=<?= $participantid ?>&sid=<?= $surveyid ?>", true);
-            xhr.setRequestHeader('Content-Type', 'text/csv');
-            xhr.send(myoutput);
-           
-			output.innerText = `You selected: ${myoutput}`;
-
+		output.innerText = `You selected: ${question1},${question2},${question3},${question4},${question5},${question6},${question7},${question8},${question9},${question10},${question11},${question12},${question13},${question14},${question15},${question16},${question17},${question18},${question19},${question20}`;
+   // end of button listner
 		});
 	  </script>
   </div>
