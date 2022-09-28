@@ -7,13 +7,11 @@ if(!isset($_SESSION['uname'])){
 }
 
 // logout
-if(isset($_POST['but_logout'])){
+if(isset($_POST['logout'])){
     session_destroy();
   header('Location: index.php');
 }
-?>
-
-<head>
+?><head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -73,7 +71,9 @@ if(isset($_POST['but_logout'])){
     </div>
   </section><!-- End Top Bar -->
 
-  <header id="header" class="header d-flex align-items-center">
+  
+
+<header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.php" class="logo d-flex align-items-center">
@@ -88,7 +88,7 @@ if(isset($_POST['but_logout'])){
 	<div class="text-center">
 	<!-- Button HTML (to Trigger Modal) -->
 	<!-- <a href="#myModal" class="trigger-btn" data-toggle="modal">Logout</a> -->
-  <a href="../CAPSTONE/index.php" >Logout</a>
+  <a href="../CAPSTONE/index.php" onclick="<?php session_destroy();?>" >Logout</a>
   <p> Welcome, (Users name to be put here)</p>
  
 
