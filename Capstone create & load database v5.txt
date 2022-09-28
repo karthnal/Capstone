@@ -13,11 +13,10 @@ CREATE TABLE `sip`.`staff` (
 
 
 
-INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('david', 'bennett', '0422987642', 'karthnal@gmail.com', 'davidb', 'david123');
-INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('wazid', 'pathan', '1234567678', 'wazid@gmail.com', 'wazida', 'wazid123');
-INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('elina', 'woolley', '555555555', 'elina@gmail.com', 'elinaw', 'elinaw123');
-INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('zach', 'jiang', '8888888888', 'zach@gmail.com', 'zachj', 'zach123');
-
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('david', 'bennett', '0422987642', 'karthnal@gmail.com', 'davidb', SHA1('david123'));
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('wazid', 'pathan', '1234567678', 'wazid@gmail.com', 'wazida', SHA1('wazid123'));
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('elina', 'woolley', '555555555', 'elina@gmail.com', 'elinaw', SHA1('elinaw123'));
+INSERT INTO `sip`.`staff` (`firstname`, `lastname`, `phone_number`, `email`, `username`, `password`) VALUES ('zach', 'jiang', '8888888888', 'zach@gmail.com', 'zachj', SHA1('zach123'));
 CREATE TABLE `sip`.`survey` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `created_by` NVARCHAR(255) NOT NULL,
