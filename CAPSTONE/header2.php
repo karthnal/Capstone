@@ -89,7 +89,7 @@ if(isset($_POST['logout'])){
 	<!-- Button HTML (to Trigger Modal) -->
 	<!-- <a href="#myModal" class="trigger-btn" data-toggle="modal">Logout</a> -->
   <a href="../CAPSTONE/index.php" onclick="<?php session_destroy();?>" >Logout</a>
-  <p> Welcome, (Users name to be put here)</p>
+  <p> Welcome, <?php echo($_SESSION['uname']); ?></p>
  
 
 
