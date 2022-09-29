@@ -22,7 +22,9 @@ include ("header2.php")
         </form>
 		
 
-				
+<?php
+	include'getresponse.php';
+	?>
 
 <div class="container-fluid" width=100%>
  <div class="row">
@@ -32,25 +34,25 @@ include ("header2.php")
 		<div class="card" style="width=50%">
   <div class="card-body">
     <h5 class="card-title">Total Number of response</h5>
-	  7
+	 <?php echo("$responses"); ?>
   </div>
 </div>
 <div class="card" style="width=50%">
   <div class="card-body">
     <h5 class="card-title">% of agree</h5>
-	  20%
+	  %<?php echo("$PAGREE"); ?>
   </div>
 </div>
 				<div class="card" style="width=50%">
   <div class="card-body">
    <h5 class="card-title">% of disagree</h5>
-	  7
+	  %<?php echo("$PDISAGREE"); ?>
   </div>
 </div>
 				<div class="card" style="width=50%">
   <div class="card-body">
-    <h5 class="card-title">% of somewhatagree</h5>
-	  7
+    <h5 class="card-title">% of I dont Know</h5>
+	  %<?php echo("$PIDK"); ?>
   </div>
 </div>
 	</div>

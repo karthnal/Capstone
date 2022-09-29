@@ -58,6 +58,13 @@ $stronglyAgreeDataSet = getQuestionCounts($con, $surveyId, 3);
 $stronglyDisagreeDataSet = getQuestionCounts($con, $surveyId, 4);
 $dontKnowDataSet = getQuestionCounts($con, $surveyId, 5);
 
+$totalagree = 0;
+$totalany = 0;
+/*for($i=0; $i<count($agreeDataSet); $i++ )
+{
+	$totalagree += $agreeDataSet[$i];
+	$totalany += $agreeDataSet[$i];
+}*/
 ?>
 
 
