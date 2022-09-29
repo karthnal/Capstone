@@ -91,20 +91,20 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
         <form action="" method="POST">
           <table>
             <tr>
-              <td>Survey Id         :</td>
+              <td>Survey Id:</td>
               <td><input type="text" name="id" readonly="readonly" value="$survey_id"></td>
             </tr>
             <tr>
-              <td>Created By        :</td>
+              <td>Created By:</td>
               <td><input type="text" name="created_by" readonly="readonly" value="$created_by"></td>
             </tr>
             <tr>
-              <td>created  Date     :</td>
+              <td>created  Date:</td>
               <td><input type="text" name="created_date" readonly="readonly" value="$created_date"></td>
             </tr>
             <tr>
               <td>Survey Description:</td>
-             <td><input type="text" name="survey_description" value="$survey_description" size="50"></td>
+             <td><input type="text" name="survey_description" value="$survey_description"></td>
             </tr>
           </table>
           <br>

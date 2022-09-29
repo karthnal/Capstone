@@ -11,9 +11,9 @@ if (!$con) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-echo "connected<br>\n";
+//echo "connected<br>\n";
 
-$surveyId = 1;
+
 
 
 function getQuestionCounts($con, $surveryId, $optionId)

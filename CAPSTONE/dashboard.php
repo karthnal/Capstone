@@ -1,6 +1,6 @@
 <?php
 include ("config.php");
-
+$surveyId = $_GET["sid"];
 
 // logout
 if(isset($_POST['but_logout'])){
@@ -18,7 +18,7 @@ include ("header2.php")
     <body>
         <h1>Dashboard</h1>
         <form method='post' action="" >
-            <input id="logout"  onclick="location.href = '.../CAPSTONE/index.php';"type="submit" value="Logout" name="but_logout" >
+            <input id="logout"  onclick="location.href = 'index.php';"type="submit" value="Logout" name="but_logout" >
         </form>
 		
 
@@ -55,16 +55,33 @@ include ("header2.php")
 </div>
 	</div>
     <div class="col"><!--COL2  -->
-		<?php
-	include("tablevars.php");
-	?>
+		
+	<?php
+	include("selector.php");
+
+
+    ?>
+
+
 	
+	<?php
+	include("tablevars.php");
+		
+
+	?>
+
 
 	<br>
 		<br>
 		<br>
 		<br>
 		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+    <br>
 
 	
 </html>

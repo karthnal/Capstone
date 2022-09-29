@@ -16,8 +16,8 @@ if(isset($_POST['but_logout'])){
 <!doctype html>
 <head>
  
-<link rel="stylesheet" href="../CAPSTONE/assets/css/login modal.css"> 
-<link rel="stylesheet" href="../CAPSTONE/assets/css/login.css">
+<link rel="stylesheet" href="assets/css/login modal.css"> 
+<link rel="stylesheet" href="assets/css/login.css">
 <?php 
 include ("header2.php")
 ?>
@@ -27,7 +27,7 @@ include ("header2.php")
 
     <body>
         <form method='post' action="" >
-            <input id="logout"  onclick="location.href = '.../CAPSTONE/index.php';"type="submit" value="Logout" name="but_logout" >
+            <input id="logout"  onclick="location.href = 'index.php';"type="submit" value="Logout" name="but_logout" >
 
          
         </form>
@@ -64,7 +64,7 @@ include ("header2.php")
     <div type ="button" class="card">
      <img src="analysis.jpg" class="card-img-top" alt="image"> 
       <div class="card-body">
-        <h5> <a href="dashboard.php" class="card-title">Dashboard</a></h5>
+        <h5> <a href="dashboard.php?sid=1" class="card-title">Dashboard</a></h5>
         <p class="card-text">Create analysis reports and view a summary of comparisons from the participants in different surveys.</p>
       </div>
     </div>

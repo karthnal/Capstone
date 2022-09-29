@@ -83,10 +83,10 @@ include("auth.php");
           </div>  
           <div class="form-group">
             <label> Email: </label>
-            <input type="text" class="form-control" id="email" name="email"  required="required">  
+            <input type="text" class="form-control" id="email" name="email"  required="required"> 	 
           </div>       
           <div class="form-group">
-			  
+		   <input type="hidden" class="form-control" id="surveyid" name="surveyid"  required="required">
             <button type="submit" value="Submit" name="but_reg" id="but_reg" class="btn btn-primary btn-lg btn-block login-btn">Continue</button> 
 			  
           </div>
@@ -118,20 +118,18 @@ include("auth.php");
               <li data-filter=".filter-books">Books</li>
             </ul>  End Portfolio Filters 
           </div> -->
-
-          <div class="row gy-4 portfolio-container">
-
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <a href="#registerUser" title="More Details" class="trigger-btn" data-toggle="modal">Survey 1</a>
-                  <p>Survey on Climate change</p>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-        
+			<div class="row gy-4 portfolio-container">
+<?php
+			include'populate.php';
+			?>
+				
+				<script>
+				function survey_click(surveyId)
+					{
+						  $("#surveyid").val(surveyId);
+					}
+					
+				</script>
           </div><!-- End Portfolio Container -->
 
         </div>

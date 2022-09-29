@@ -92,16 +92,16 @@ if (isset($_POST['submit'])) {
           echo <<<END
                     <form action="" method="POST">
 
-                      <label>Survey Id     :</label>
+                      <label>Survey Id  :</label>
                       <input type="number" name="survey_id" value="$survey_id" required="required" readonly="readonly">
                       <br>
                       <br>
-                      <label>Question Id   :</label>
+                      <label>Question Id  :</label>
                       <input type="number" name="question_id" value="$question_id" required="required" readonly="readonly">
                       <br>
                       <br>
                       <label>Edit question :</label>
-                      <input type="text" name="question_text" value="$question_text" required="required" size="80">       
+                      <input type="text" name="question_text" value="$question_text" required="required">       
                       <br><hr>
                     <input type="submit" name="submit" value="Update">
                     <input type="submit" name="submit" value="Cancel"> 
