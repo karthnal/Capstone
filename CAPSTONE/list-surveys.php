@@ -1,6 +1,17 @@
-
 <?php
 include("header4.php");
+?>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+    
+
+   </body>
+   </html>
+<?php
 
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
 $con = mysqli_connect("localhost:4306", $user, $password, "sip");

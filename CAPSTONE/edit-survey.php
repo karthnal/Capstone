@@ -4,12 +4,12 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Edit Survey<span>.</span></h2>
+
    </body>
    </html>
  
 <?php
+include("header4.php");
 
  $host = "localhost"; /* Host name */$user = "root"; /* User */$password = ""; /* Password */$dbname = "sip"; /* Database name */
 $con = mysqli_connect("localhost:4306", $user, $password, "sip");
@@ -77,9 +77,10 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
               $result = mysqli_query($con,$query);
          //echo "<p>result is $result</p>";
-
+                
          if ($result == 1) {
-          echo "Successfully updated survey record!!!<br>";
+          echo "<div class=\" container-md mt-5\">";
+         echo "Successfully updated survey record!!!<br>";
           echo "<a href=\"index.php\">Back to Home Page</a>";
           echo "<br><hr>";
           exit;   
@@ -87,6 +88,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
          
    }
       echo <<<END
+       <div class=" container-md mt-5">
         Editing survey with ID: <strong>$survey_id</strong><br><br>
         <form action="" method="POST">
           <table>
@@ -111,9 +113,10 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
           <input type="submit" name="submit" value="Update">
           <input type="submit" name="submit" value="Cancel"> 
         </form>
+        </div>
 
 END;
-
+      echo "<div class=\" container-md mt-5\">";
       echo "<a href=\"index.php\">Back to Home Page</a>";
       echo "<br><hr>";  
 

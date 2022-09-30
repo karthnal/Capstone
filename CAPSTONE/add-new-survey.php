@@ -2,10 +2,12 @@
     <head>
         <title>Add Survey</title>
         <meta charset="UTF-8"/>
+        <?php
+include("header4.php");
+
+        ?>
     </head>
     <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Add Survey<span>.</span></h2>
    </body>
    </html>
  
@@ -27,16 +29,19 @@ if (isset($_POST['submit'])) {
             } 
 
             if (!isset($_POST['created_by']) || empty($_POST['created_by'])) {
+             echo "<div class=\" container-md mt-5\">";
               echo "created by field not supplied.";
               $con->close();
               exit;
             }
             if (!isset($_POST['created_date']) || empty($_POST['created_date'])) {
+              echo"<div class=\" container-md mt-5\">";
               echo "created date field not supplied.";
               $con->close();
               exit;
             }
             if (!isset($_POST['survey_description']) || empty($_POST['survey_description'])) {
+              echo"<div class=\" container-md mt-5\">";
               echo "survey_description field not supplied.";
               $con->close();
               exit;
@@ -65,6 +70,8 @@ else
 {
 
           echo <<<END
+                   <div class=" container-md mt-5">
+
                     <form action="" method="POST">
                     <table>
                       <tr>
@@ -84,9 +91,11 @@ else
                     <input type="submit" name="submit" value="Add">
                     <input type="submit" name="submit" value="Cancel"> 
                   </form>
+                  <div class=\" container-md mt-5\">
           END;
 
      }
-     echo "<a href=index.php>Back to Home Page</a>"; 
+     
+     echo "<div class=\" container-md mt-5\"><a href=index.php>Back to Home Page</a>"; 
      
  
