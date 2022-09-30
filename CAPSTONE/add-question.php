@@ -41,17 +41,28 @@ if (isset($_POST['submit'])) {
           $question_text = mysqli_real_escape_string($con,$_POST['question_text']);
           $survey_id = mysqli_real_escape_string($con,$_POST['survey_id']);
           
+          try
+          {
 
-          $insert_query = "INSERT INTO questions (survey_id, question_text) VALUES ('".$survey_id."','".$question_text."')";
-         $result = mysqli_query($con,$insert_query);
-         //echo "<p>result is $result</p>";
+            $insert_query = "INSERT INTO questions (survey_id, question_text) VALUES ('".$survey_id."','".$question_text."')";
+                   $result = mysqli_query($con,$insert_query);
+                   echo "<p>result is $result</p>";
 
-          if ($result == 1) {
-          echo "Successfully added a new question!!!<br>";
-          echo "<a href=\"index.php\">Back to Home Page</a>";
-          echo "<br><hr>";
-          exit;   
-        }
+                     if ($result == 1) {
+                    echo "Successfully added a new question!!!<br>";
+                    echo "<a href=\"index.php\">Back to Home Page</a>";
+                    echo "<br><hr>";
+                    exit; 
+                  }
+                 }
+          catch (Exception $e)
+            {
+               echo " *** Record cannot be added ***" ;
+               echo "<br>";
+               echo " *** survey id: $survey_id not found on the parent table ***" ;
+               echo "<br>";
+            }
+          
 
 }
 else

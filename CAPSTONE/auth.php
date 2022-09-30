@@ -9,7 +9,7 @@ if(isset($_POST['but_login'])){
 
     if ($uname != "" && $password != ""){
 
-        $sql_query = "select count(*) as cntUser from staff where username='".$uname."' and password='".$password."'";
+        $sql_query = "select count(*) as cntUser from staff where username='".$uname."' and password='".sha1($password)."'";
         $result = mysqli_query($con,$sql_query);
         $row = mysqli_fetch_array($result);
 
