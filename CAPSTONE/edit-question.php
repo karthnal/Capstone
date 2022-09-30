@@ -2,10 +2,13 @@
     <head>
         <title>Edit Question</title>
         <meta charset="UTF-8"/>
+        <?php 
+        include("header4.php");
+
+        ?>
     </head>
     <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Edit Question<span>.</span></h2>
+    
    </body>
    </html>
  
@@ -80,6 +83,7 @@ if (isset($_POST['submit'])) {
          //echo "<p>result is $result</p>";
 
           if ($result == 1) {
+          echo "<div class=\" container-md mt-5\">";
           echo "Successfully updated question text!!!<br>";
           echo "<a href=\"index.php\">Back to Home Page</a>";
           echo "<br><hr>";
@@ -90,6 +94,7 @@ if (isset($_POST['submit'])) {
 
 
           echo <<<END
+           <div class=" container-md mt-5">
                     <form action="" method="POST">
 
                       <label>Survey Id  :</label>
@@ -106,9 +111,11 @@ if (isset($_POST['submit'])) {
                     <input type="submit" name="submit" value="Update">
                     <input type="submit" name="submit" value="Cancel"> 
                   </form>
+            </div
           END;
 
      
-     echo "<a href=index.php>Back to Home Page</a>"; 
+    echo"<div class=\" container-md mt-5\">";
+     echo " <a href=index.php>Back to Home Page</a>"; 
      
  
