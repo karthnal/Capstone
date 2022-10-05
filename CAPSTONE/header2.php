@@ -45,9 +45,9 @@ if(isset($_POST['logout'])){
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="../CAPSTONE/assets/css/login modal.css">
+<link rel="stylesheet" href="../assets/css/login modal.css">
 	
-<link rel="stylesheet" href="../CAPSTONE/assets/css/login.css">
+<link rel="stylesheet" href="../assets/css/login.css">
 <!-- Login Modal End -->
 
   <!-- =======================================================
@@ -88,7 +88,7 @@ if(isset($_POST['logout'])){
 	<div class="text-center">
 	<!-- Button HTML (to Trigger Modal) -->
 	<!-- <a href="#myModal" class="trigger-btn" data-toggle="modal">Logout</a> -->
-  <a href="../CAPSTONE/logout.php"  >Logout</a>
+  <a href="logout.php"  >Logout</a>
   <p> Welcome, <?php echo($_SESSION['uname']); ?></p>
  
 

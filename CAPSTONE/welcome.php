@@ -77,20 +77,6 @@ include("footer2.php");
 
   <!-- end of cards -->
 
-<!--<div class=" container-md mt-5">
-      <div class="d-grid gap-2 col-6 mx-auto">
-  <a href="../CAPSTONE/dashboard.php"class="btn btn-outline-primary" type="button">Dashboard</a>
-  <button class="btn btn-secondary" type="button">Button</button>
-</div>
-</div>
-
-    </body>
-  
-  <li><a href="../CAPSTONE/dashboard.php">dashboard</a></li>
-     <li><a href="../CAPSTONE/list-participants.php">List Participants</a></li>
-      <li><a href="../CAPSTONE/list-surveys.php">Survey Management</a></li>
-      <li><a href="../CAPSTONE/question-management.php">Question Management</a></li>
-    -->
 </html>
 
 

@@ -3,8 +3,8 @@
 <!doctype html>
 <head>
  
-<link rel="stylesheet" href="../CAPSTONE/assets/css/login modal.css">   
-<link rel="stylesheet" href="../CAPSTONE/assets/css/login.css">
+<link rel="stylesheet" href="../assets/css/login modal.css">   
+<link rel="stylesheet" href="../assets/css/login.css">
 <?php 
 include ("header4.php");
 $participantid = $_GET["pid"];
