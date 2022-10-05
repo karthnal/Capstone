@@ -14,25 +14,24 @@ $sql ="SELECT option_id, COUNT(*) AS resp FROM `responses` WHERE (option_id = 1 
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);
 $agree = $row['resp'];
-echo "<p>Agree:$agree </p>";
-
+ 
 $sql ="SELECT option_id, COUNT(*) AS resp FROM `responses` WHERE (option_id = 2 OR option_id = 4)  AND survey_id = ".$surveyId.";";
 //$sql = "SELECT 100*( SELECT COUNT(*) AS resp FROM `responses` WHERE question_id = 1 AND survey_id = ".$surveyId." ) / ( SELECT COUNT(*)AS resp FROM `responses` WHERE option_id = 2 OR option_id = 4 AND survey_id =".$surveyId." ) AS percent;";
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);
 $disagree = $row['resp'];
-echo "<p>disagree:$disagree </p>";
+ 
 
 $sql ="SELECT option_id, COUNT(*) AS resp FROM `responses` WHERE option_id = 5  AND survey_id = ".$surveyId.";";
 //$sql = "SELECT 100*( SELECT COUNT(*) AS resp FROM `responses` WHERE question_id = 1 AND survey_id = ".$surveyId." ) / ( SELECT COUNT(*)AS resp FROM `responses` WHERE option_id = 5 AND survey_id =".$surveyId." ) AS percent;";
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);
 $idk = $row['resp'];
-echo "<p>idk:$idk </p>";
+ 
 
 try{
 	$sql ="SELECT COUNT(*) AS resp FROM `responses` where survey_id = ".$surveyId.";";
-	echo "<p>Survey id is:$surveyId </p>";
+	
 	$result = mysqli_query($con, $sql);
 	$row = mysqli_fetch_array($result);
 	$responses1 = $row['resp']; 
