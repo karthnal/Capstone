@@ -163,4 +163,8 @@ include("auth.php");
 
 </body>
 
+<?php 
+include("footer2.php");
+?>
+
 </html>

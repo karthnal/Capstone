@@ -1,11 +1,12 @@
 <html>
     <head>
+        <?php 
+include("header4.php");
+        ?>
         <title>Delete Question</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Delete Question<span>.</span></h2>
    </body>
    </html>
 
