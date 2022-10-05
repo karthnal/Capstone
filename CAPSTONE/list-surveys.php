@@ -85,7 +85,7 @@ if (!$con) {
                             //echo "<p>hiddenValue2: $hiddenValue2</p>";
                         }
 
-                         echo "<a href=\"index.php\">Back to Home Page|   </a>";
+                         echo "<a href=\"index.php\">Back to Home Page |   </a>";
                          echo "<a href=add-new-survey.php>Add New Survey</a>"; 
                          echo "<br><hr>";                       
                     

@@ -65,10 +65,16 @@ include ("header2.php")
       </div>
     </div>
   </div>
-
+  <div>
 </div>
 </div>
+</div>
+<?php 
+include("footer2.php");
+?>
 </body>
+
+
   <!-- end of cards -->
 
 <!--<div class=" container-md mt-5">
