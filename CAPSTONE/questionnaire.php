@@ -1166,7 +1166,8 @@ $surveyid = $_GET["sid"];
             xhr.send(myoutput);
            
 			output.innerText = `You selected: ${myoutput}`;
-
+			
+            window.location.href = "index.php";
 		});
 	  </script>
   </div>
