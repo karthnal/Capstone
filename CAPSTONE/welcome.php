@@ -26,11 +26,7 @@ include ("header2.php")
 
 
     <body>
-        <form method='post' action="" >
-            <input id="logout"  onclick="location.href = 'index.php';"type="submit" value="Logout" name="but_logout" >
 
-         
-        </form>
          <div class=" container-md mt-5">   
         <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">

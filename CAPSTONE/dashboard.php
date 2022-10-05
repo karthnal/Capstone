@@ -17,9 +17,7 @@ include ("header2.php")
     <head></head>
     <body>
         <h1>Dashboard</h1>
-        <form method='post' action="" >
-            <input id="logout"  onclick="location.href = 'index.php';"type="submit" value="Logout" name="but_logout" >
-        </form>
+
 		
 
 <?php
