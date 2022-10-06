@@ -1008,26 +1008,26 @@ $surveyid = $_GET["sid"];
 
 		  
 		btn.addEventListener('click', () => {  
-		let question1 = 3;
-		let question2 = 3;
-		let question3 = 3;
-		let question4 = 3;
-		let question5 = 3;
-		let question6 = 3;
-		let question7 = 3;
-		let question8 = 3;
-		let question9 = 3;
-    	let question10 = 3;
-		let question11 = 3;
-		let question12 = 3;
-		let question13 = 3;
-		let question14 = 3;
-		let question15 = 3;
-		let question16 = 3;
-		let question17 = 3;
-		let question18 = 3;
-		let question19 = 3;
-		let question20 = 3;
+		let question1 = 5;
+		let question2 = 5;
+		let question3 = 5;
+		let question4 = 5;
+		let question5 = 5;
+		let question6 = 5;
+		let question7 = 5;
+		let question8 = 5;
+		let question9 = 5;
+    	let question10 = 5;
+		let question11 = 5;
+		let question12 = 5;
+		let question13 = 5;
+		let question14 = 5;
+		let question15 = 5;
+		let question16 = 5;
+		let question17 = 5;
+		let question18 = 5;
+		let question19 = 5;
+		let question20 = 5;
 		let check1 = document.getElementsByName('Q1');
 		let check2 = document.getElementsByName('Q2');		
 		let check3 = document.getElementsByName('Q3');		
@@ -1166,7 +1166,7 @@ $surveyid = $_GET["sid"];
             xhr.send(myoutput);
            
 			output.innerText = `You selected: ${myoutput}`;
-			
+			localStorage.setItem("thankyou","thank you");
             window.location.href = "index.php";
 		});
 	  </script>

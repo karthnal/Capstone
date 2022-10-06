@@ -11,6 +11,7 @@ include("auth.php");
 	if(isset($_SESSION['uname'])){
     header('Location: welcome.php');
 }
+	
 
 ?>
 
@@ -23,7 +24,7 @@ include("auth.php");
   <main id="main">
 
 <!-- login  Modal HTML -->	  
-
+	  
 <div id="myModal" class="modal fade">
 	<div class="modal-dialog modal-login">
 		<div class="modal-content">
@@ -161,10 +162,21 @@ include("auth.php");
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
+  <script> 
+	  if(localStorage.getItem("thankyou") == "thank you")
+		  {
+			  alert("thank you for submitting");
+			  window.localStorage.clear();
+		  }
+	  
+  </script>	
+	
 </body>
+
 
 <?php 
 include("footer2.php");
+	
 ?>
 
 </html>
