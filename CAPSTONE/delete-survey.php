@@ -1,11 +1,13 @@
 <html>
     <head>
+      <?php 
+      include("header4.php");
+      ?>
         <title>Delete Survey</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-     <h1 style="background-color:aquamarine;">Clim8<span>.</span></h1>
-     <h2 style="background-color:aquamarine;">Delete Survey<span>.</span></h2>
+
    </body>
    </html>
 
@@ -19,6 +21,7 @@ if (!$con) {
 }
 
 if (!isset($_GET['id']) || empty($_GET['id'])) {
+        echo "<div class=\" container-md mt-5\">";
         echo "Error: survey id  not supplied.<br>";
         echo '<a href="index.php">Go Back</a> ';
         $con->close();
@@ -46,16 +49,19 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
             //check fiels not set or empty
             if (!isset($_POST['created_by']) || empty($_POST['created_by'])) {
+              echo "<div class=\" container-md mt-5\">";
               echo "created by field not supplied.";
               $con->close();
               exit;
             }
             if (!isset($_POST['created_date']) || empty($_POST['created_date'])) {
+              echo "<div class=\" container-md mt-5\">";
               echo "created date field not supplied.";
               $con->close();
               exit;
             }
             if (!isset($_POST['survey_description']) || empty($_POST['survey_description'])) {
+              echo "<div class=\" container-md mt-5\">";
               echo "survey_description field not supplied.";
               $con->close();
               exit;
@@ -65,7 +71,8 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
        $post_created_by = $_POST['created_by'];
        $post_created_date = $_POST['created_date'];
        $post_survey_description = $_POST['survey_description'];
-       echo "<p>post_survey_description is: $post_survey_description</p>";
+      // echo "<div class=\" container-md mt-5\">";
+      // echo "<p>post_survey_description is: $post_survey_description</p>";
 
 
         $query = "DELETE FROM survey 
@@ -73,9 +80,10 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
 
               $result = mysqli_query($con,$query);
-         echo "<p>result is $result</p>";
+         //echo "<p>result is $result</p>";
 
          if ($result == 1) {
+          echo "<div class=\" container-md mt-5\">";
           echo "Successfully deleted survey record!!!<br>";
           echo "<a href=\"index.php\">Back to Home Page</a>";
           echo "<br><hr>";
@@ -84,7 +92,9 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
          
    }
       echo <<<END
+         <div class=" container-md mt-5">
         Editing survey with ID: <strong>$survey_id</strong><br><br>
+     
         <form action="" method="POST">
           <table>
             <tr>
@@ -108,9 +118,10 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
           <input type="submit" name="submit" value="Delete">
           <input type="submit" name="submit" value="Cancel"> 
         </form>
+        </div>
 
 END;
-
+        echo "<div class=\" container-md mt-5\">";
         echo "<a href=\"index.php\">Back to Home Page</a>";
         echo "<br><hr>";   
 

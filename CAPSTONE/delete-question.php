@@ -20,6 +20,7 @@ if (!$con) {
 }
 
 if (!isset($_GET['question_id']) || empty($_GET['question_id'])) {
+        echo "<div class=\" container-md mt-5\">";
         echo "Error: question id  not supplied.<br>";
         echo '<a href="index.php">Go Back</a> ';
         $con->close();
@@ -27,6 +28,7 @@ if (!isset($_GET['question_id']) || empty($_GET['question_id'])) {
       }
 
 if (!isset($_GET['survey_id']) || empty($_GET['survey_id'])) {
+        echo "<div class=\" container-md mt-5\">";
         echo "Error: survey id  not supplied.<br>";
         echo '<a href="index.php">Go Back</a> ';
         $con->close();
@@ -47,9 +49,10 @@ if (!isset($_GET['survey_id']) || empty($_GET['survey_id'])) {
 
 
               $result = mysqli_query($con,$query);
-         echo "<p>result is $result</p>";
+       //  echo "<p>result is $result</p>";
 
          if ($result == 1) {
+        echo "<div class=\" container-md mt-5\">";
           echo "<a href=\"delete.php\"></a>";
           echo "Successfully deleted a question!!!<br>";
           echo "<a href=\"index.php\">Back to Home Page</a>";
