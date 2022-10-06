@@ -67,7 +67,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q1" value="5" id="5" checked="checked" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -116,7 +116,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q2" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -165,7 +165,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q3" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -213,7 +213,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q4" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -261,7 +261,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q5" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -309,7 +309,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q6" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -357,7 +357,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q7" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -405,7 +405,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q8" value="5" id="5" checked="checked" />
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -453,7 +453,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q9" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -501,7 +501,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q10" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -546,7 +546,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q11" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -596,7 +596,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q12" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -645,7 +645,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q13" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -693,7 +693,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q14" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -741,7 +741,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q15" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -789,7 +789,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q16" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -837,7 +837,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q17" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -885,7 +885,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q18" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -933,7 +933,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q19" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
@@ -981,7 +981,7 @@ $surveyid = $_GET["sid"];
   
  <!-- Checked radio -->
     <div class="form-check form-check-inline mb-2">
-      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="5" id="5" />
+      <input class="form-check-input" type="radio" data-limit="only-one-in-a-group" name="Q20" value="5" id="5" checked="checked"/>
       <label class="form-check-label" for="flexCheckDefault5">
         i dont know  
       </label>
